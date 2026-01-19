@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cherith Boya</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">Cherith Boya</div>
+
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <span class="nav-sep">|</span>
+
+      <a class="nav-icon" href="https://github.com/cherzx29" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+      </a>
+
+      <a class="nav-icon" href="https://www.linkedin.com/in/cherithboya/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
+      </a>
+    </div>
+  </header>
+
+  <!-- HOME / HERO -->
+  <section id="home" class="hero-left">
+    <div class="hero-wrap">
+      <!-- Profile photo circle -->
+      <div class="pfp" title="Add your photo">
+        <img
+          src="assets/me.jpg"
+          alt="Cherith Boya"
+          onerror="this.style.display='none'; this.parentElement.classList.add('pfp-fallback');"
+        />
+        <span class="pfp-fallback-text" aria-hidden="true">CB</span>
+      </div>
+
+      <div class="hero-main">
+        <h1>Hello! I'm Cherith Boya,</h1>
+        <div class="hero-card">
+          <p class="hero-text">
+            I am a third year Computer Engineering student at the University of Guelph who loves building, coding, and bringing
+            ideas to life through technology. I’m currently excited to dive deeper into hardware and embedded systems, exploring
+            robotics, sensors, and control-based projects. Feel free to check out my work and reach out about opportunities,
+            collaborations, or anything tech-related!
+          </p>
+
+          <div class="hero-divider"></div>
+
+          <p class="hero-text">
+            Besides being a techie, I enjoy spending time with friends and family and creating meaningful memories. Music is a big part of my life, and I listen to all genres because it helps me connect with others. I also like staying active through basketball and working out, and I unwind with gaming. I’m a very social person who enjoys meeting new people and building connections.
+          </p>
+        </div>
+
+        <div class="hero-buttons">
+          <a class="pill contact-btn" href="#contact">
+            <span class="icon" aria-hidden="true">
+              <svg class="pill-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6h16v12H4V6zm1.5 1.5v.2l6.9 5.1c.4.3.9.3 1.3 0l6.9-5.1v-.2H5.5zm13 9V9.2l-5.9 4.4c-1 .7-2.2.7-3.2 0L3.5 9.2v7.3h15z" />
+              </svg>
+            </span>
+            <span class="label">Contact</span>
+            <span class="chev">↘</span>
+          </a>
+
+          <a class="pill resume-btn" href="assets/Cherith Boya Resume (6).pdf" target="_blank" rel="noopener">
+            <span class="icon" aria-hidden="true">
+              <svg class="pill-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v10.2l3.3-3.3 1.4 1.4-5.7 5.7-5.7-5.7 1.4-1.4 3.3 3.3V3h2zM5 19h14v2H5v-2z" />
+              </svg>
+            </span>
+            <span class="label">Download Resume</span>
+            <span class="chev">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+
+    <div class="exp-timeline">
+      <article class="exp-item">
+        <div class="exp-marker">
+          <span class="exp-dot"></span>
+          <span class="exp-line"></span>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-logo" aria-hidden="true">
+            <img src="assets/Kumon.png" alt="Kumon Logo" class="exp-logo-img" />
+          </div>
+
+          <div class="exp-content">
+            <div class="exp-top">
+              <div>
+                <h3 class="exp-role">Student Instructor Assistant</h3>
+                <p class="exp-company">Kumon Math and Reading Centre — Mississauga, ON</p>
+              </div>
+              <span class="exp-date">Sept 2021 – Feb 2023</span>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Supported high-volume sessions by coaching <strong>20+ students</strong> per shift, accelerating accuracy, confidence, and pace.</li>
+              <li>Diagnosed learning gaps quickly and adapted explanations to different learning styles.</li>
+              <li>Tracked performance and completion metrics to align instructors on progress and next steps.</li>
+              <li>Guided students through challenging concepts while maintaining a calm, motivating environment.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span class="tag">Technical Communication</span>
+              <span class="tag">Mentoring</span>
+              <span class="tag">Reliability</span>
+              <span class="tag">Time Management</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS (CAROUSEL) -->
+  <section id="projects" class="section">
+    <div class="proj-head">
+      <h2>Projects</h2>
+
+      <div class="proj-controls" aria-label="Project carousel controls">
+        <button class="proj-arrow" id="projPrev" type="button" aria-label="Previous project">‹</button>
+        <button class="proj-arrow" id="projNext" type="button" aria-label="Next project">›</button>
+      </div>
+    </div>
+
+    <div class="proj-viewport" aria-label="Project carousel">
+      <div class="proj-track" id="projTrack">
+        <article class="proj-card">
+          <div class="proj-media">
+            <img
+              src="assets/wheelchair.png"
+              alt="Project screenshot"
+              onerror="this.style.display='none'; this.parentElement.classList.add('proj-media-fallback');"
+            />
+            <span class="proj-date">May 2024 – Aug 2024</span>
+          </div>
+
+          <div class="proj-body">
+            <h3 class="proj-title">Autonomous Mobility Systems Design</h3>
+            <p class="proj-desc">
+              Led the design and delivery of an autonomous mobility system from end to end as a project lead for a five-membered
+              team; design of mechanical components on AutoCAD, programming of Arduino-based C++ control for motion, task execution,
+              and system integration within defined engineering constraints.
+            </p>
+
+            <div class="proj-tags">
+              <span class="tag tag-purple">C++</span>
+              <span class="tag tag-purple">Arduino UNO</span>
+              <span class="tag tag-purple">AutoCAD</span>
+              <span class="tag tag-purple">Meccano</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-media">
+            <img
+              src="assets/Uni.png"
+              alt="Project screenshot"
+              onerror="this.style.display='none'; this.parentElement.classList.add('proj-media-fallback');"
+            />
+            <span class="proj-date">Sept 2024 – Dec 2024</span>
+          </div>
+
+          <div class="proj-body">
+            <h3 class="proj-title">University Management System</h3>
+            <p class="proj-desc">
+              This project was a University Management System that simulates how real academic systems work in schools, from student
+              registration to admin control. I developed the backend for both the student and admin modules, including secure login
+              and course management features. Completed as part of a 4-person team, this project earned a 100% final score.
+            </p>
+
+            <div class="proj-tags">
+              <span class="tag tag-purple">Java</span>
+              <span class="tag tag-purple">JavaFX</span>
+              <span class="tag tag-purple">OOP</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-media">
+            <img
+              src="assets/casinoGame.png"
+              alt="Project screenshot"
+              onerror="this.style.display='none'; this.parentElement.classList.add('proj-media-fallback');"
+            />
+            <span class="proj-date">Jan 2025 – Present</span>
+          </div>
+
+          <div class="proj-body">
+            <h3 class="proj-title">Lucky Queen Casino</h3>
+            <p class="proj-desc">Lucky Queen Online Casino was a Java-based group project where I led the front-end development, designing the login system, main menu, and the Skyfall game interface. I also worked on a simple Python module for bet validation to support the overall game logic, combining user-focused design with structured system thinking.</p>
+
+            <div class="proj-tags">
+              <span class="tag tag-purple">Java</span>
+              <span class="tag tag-purple">Java Swing</span>
+              <span class="tag tag-purple">OOP</span>
+              <span class="tag tag-purple">Python</span>
+            </div>
+          </div>
+        </article>
+        <article class="proj-card">
+          <div class="proj-media">
+            <img
+              src="assets/port.png"
+              alt="Project screenshot"
+              onerror="this.style.display='none'; this.parentElement.classList.add('proj-media-fallback');"
+            />
+            <span class="proj-date">Jan 2025 – Present</span>
+          </div>
+
+          <div class="proj-body">
+            <h3 class="proj-title">Personal Portfolio Website</h3>
+            <p class="proj-desc">
+              The site you’re currently on is my custom-built portfolio showcasing my technical projects, leadership, and engineering journey. I designed and developed it using HTML, CSS, and JavaScript with a focus on responsiveness and professional presentation. It reflects both my software and hardware background. It's deployed through Vercel for fast and reliable access.</p>
+            <div class="proj-tags">
+              <span class="tag tag-purple">JavaScript</span>
+              <span class="tag tag-purple">HTML5</span>
+              <span class="tag tag-purple">CSS3</span>
+              <span class="tag tag-purple">Vercel</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership" class="section">
+    <h2>Leadership</h2>
+    <div class="exp-timeline">
+      <article class="exp-item">
+        <div class="exp-marker">
+          <span class="exp-dot"></span>
+          <span class="exp-line"></span>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-logo" aria-hidden="true">
+            <img src="assets/ac.png" alt="Leadership logo" class="exp-logo-img" />
+          </div>
+
+          <div class="exp-content">
+            <div class="exp-top">
+              <div>
+                <h3 class="exp-role">Flight Sergeant</h3>
+                <p class="exp-company">Royal Canadian Air Cadets - Mississauga, ON</p>
+              </div>
+              <span class="exp-date">Sept 2020 – June 2024</span>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Served four years in the Royal Canadian Air Cadets, developing advanced discipline, teamwork, and leadership through rigorous drill and aviation training.</li>
+              <li>Achieved the rank of Flight Sergeant, leading and mentoring an entire flight while ensuring accountability, morale, and performance standards.</li>
+              <li>Applied foundational knowledge of flight physics, aerodynamics, and aircraft systems to strengthen analytical and engineering-focused thinking.</li>
+              <li>Coordinated training activities and inspections, fostering clear communication, problem-solving, and organizational skills in high-responsibility settings.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span class="tag">Systems Thinking</span>
+              <span class="tag">Techincal Discipline</span>
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Leadership</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="exp-timeline">
+      <article class="exp-item">
+        <div class="exp-marker">
+          <span class="exp-dot"></span>
+          <span class="exp-line"></span>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-logo" aria-hidden="true">
+            <img src="assets/kst.png" alt="Leadership logo" class="exp-logo-img" />
+          </div>
+
+          <div class="exp-content">
+            <div class="exp-top">
+              <div>
+                <h3 class="exp-role">Youth Leader & MC</h3>
+                <p class="exp-company">Kannada Sangha Toronto — Guelph, ON</p>
+              </div>
+              <span class="exp-date">Sept 2020 – May 2024</span>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Served as Master of Ceremonies for major cultural events, engaging audiences of 500–1,000+ attendees with confident public speaking.</li>
+              <li>Coordinated event logistics, performers, and volunteer teams to ensure smooth execution of large-scale cultural showcases.</li>
+              <li>Led youth-focused initiatives within a 1,000+ member community, promoting inclusivity and cultural involvement.</li>
+              <li>Developed strong leadership, organization, and communication skills through planning and delivering high-impact community events.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span class="tag">Team Leadership</span>
+              <span class="tag">Communication</span>
+              <span class="tag">Organization</span>
+              <span class="tag">Teamwork</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="exp-timeline">
+      <article class="exp-item">
+        <div class="exp-marker">
+          <span class="exp-dot"></span>
+          <span class="exp-line"></span>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-logo" aria-hidden="true">
+            <img src="assets/ls.png" alt="Leadership logo" class="exp-logo-img" />
+          </div>
+
+          <div class="exp-content">
+            <div class="exp-top">
+              <div>
+                <h3 class="exp-role">National Lifeguard</h3>
+                <p class="exp-company">Lifesaving Society — Brampton, ON</p>
+              </div>
+              <span class="exp-date">Sept 2023 – June 2024</span>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Completed Lifesaving Society certifications including Bronze Medallion and Bronze Cross, developing advanced water rescue, risk assessment, and emergency response skills.</li>
+              <li>Trained in Standard First Aid with CPR-C, applying structured safety protocols and rapid decision-making in high-pressure environments.</li>
+              <li>Built strong situational awareness and problem-solving abilities through rigorous lifeguard fitness, judgment, and rescue training.</li>
+              <li>Demonstrated responsibility, leadership, and teamwork by preparing for and meeting the professional standards required for National Lifeguard (NL) certification.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span class="tag">Risk assessment</span>
+              <span class="tag">Critical Decision-Making</span>
+              <span class="tag">Technical Discipline</span>
+              <span class="tag">Leadership</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT (NEW LOOK) -->
+  <section id="contact" class="section contact">
+    <div class="contact-head">
+      <h2 class="contact-title">
+        Let's Build Something <span class="accent">Together</span>
+      </h2>
+
+      <div class="contact-underline" aria-hidden="true"></div>
+
+      <p class="contact-lead">
+        I enjoy working with people who are passionate about what they do. If you have an idea, want to collaborate, or just want
+        to talk tech, reach out!
+      </p>
+    </div>
+
+    <div class="contact-grid" aria-label="Contact options">
+      <!-- Coffee Chat -->
+      <article class="contact-card contact-card--coffee">
+        <h3 class="contact-card-title">Coffee Chat? <span aria-hidden="true">☕</span></h3>
+        <p class="contact-card-text">
+          Down for a quick chat about projects, internships, or tech. Hit me up!
+        </p>
+        <div class="contact-mini-tags" aria-hidden="true">
+          <span class="mini-tag">Open to collabs</span>
+          <span class="mini-tag">Oppurtunities</span>
+        </div>
+      </article>
+
+      <!-- Email -->
+      <article class="contact-card contact-card--email">
+        <h3 class="contact-card-title">Email</h3>
+        <p class="contact-card-text">
+          Best way to reach me for opportunities, questions, or anything professional.
+        </p>
+        <a class="contact-cta" href="mailto:cboya@uoguelph.ca">cboya@uoguelph.ca</a>
+      </article>
+
+      <!-- LinkedIn -->
+      <article class="contact-card contact-card--linkedin">
+        <h3 class="contact-card-title">LinkedIn</h3>
+        <p class="contact-card-text">
+          If you prefer LinkedIn messages, connect with me and send a note.
+        </p>
+        <a class="contact-cta" href="https://www.linkedin.com/in/cherithboya/" target="_blank" rel="noopener">
+          Message me on LinkedIn
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
