@@ -87,7 +87,6 @@ body {
 }
 
 @media (max-width: 900px) {
-
   .navbar {
     padding: 12px 14px;
   }
@@ -99,10 +98,13 @@ body {
 
   .nav-right {
     gap: 10px;
+    flex-wrap: wrap;
   }
 
   .nav-links {
     gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .nav-links a {
@@ -116,7 +118,7 @@ body {
   }
 
   .nav-sep {
-    display: none;   /* removes the | on mobile */
+    display: none;
   }
 }
 
