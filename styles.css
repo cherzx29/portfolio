@@ -86,6 +86,41 @@ body {
   transform: translateY(-2px);
 }
 
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 12px 14px;
+  }
+
+  .nav-left {
+    font-size: 1.05rem;
+    font-weight: 800;
+  }
+
+  .nav-right {
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .nav-icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav-sep {
+    display: none;   /* removes the | on mobile */
+  }
+}
+
+
 /* HERO */
 .hero-left {
   min-height: 70vh;
