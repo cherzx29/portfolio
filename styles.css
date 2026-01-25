@@ -87,40 +87,45 @@ body {
 }
 
 @media (max-width: 900px) {
-  .navbar {
-    padding: 12px 14px;
+
+  /* Existing mobile styles stay above */
+
+  /* === MOBILE NAVBAR CLEAN MODE === */
+
+  /* Hide all nav links */
+  .nav-links a {
+    display: none;
   }
 
-  .nav-left {
-    font-size: 1.05rem;
+  /* Only show Home */
+  .nav-links a[href="#home"] {
+    display: inline-block;
+    font-size: 0.9rem;
     font-weight: 800;
   }
 
+  /* Tighten spacing */
   .nav-right {
     gap: 10px;
-    flex-wrap: wrap;
   }
 
   .nav-links {
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    gap: 10px;
   }
 
-  .nav-links a {
-    font-size: 0.85rem;
-    font-weight: 700;
-  }
-
+  /* Shrink icons */
   .nav-icon img {
     width: 18px;
     height: 18px;
   }
 
+  /* Hide the divider | */
   .nav-sep {
     display: none;
   }
+
 }
+
 
 
 /* HERO */
